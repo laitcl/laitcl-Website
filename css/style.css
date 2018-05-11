@@ -41,7 +41,7 @@ a {
 }
 a:hover, a:focus {
 	text-decoration: none;
-	color: #7bc3d1;
+	color: #d17b7b;
 }
 ul, ol {
 	list-style: none;
@@ -73,7 +73,7 @@ hr {
 	width: 70px;
 	text-align: center;
 	position: relative;
-	background: #7bc3d1;
+	background: #d17b7b;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	border: 0;
@@ -204,7 +204,7 @@ hr {
 /* Skills Section */
 #skills {
 	padding: 100px 0;
-	background: #7bc3d1;
+	background: #d17b7b;
 }
 #skills h2 {
 	color: #fff;
@@ -270,7 +270,7 @@ ol.type li {
 	margin-left: 20px;
 }
 ol.type li a {
-	background: #7bc3d1;
+	background: #d17b7b;
 	color: #fff;
 	padding: 6px 14px;
 }
@@ -382,7 +382,7 @@ ol.type li a:hover {
 /* Achivements Section */
 #achievements {
 	padding: 100px 0;
-	background: #7bc3d1;
+	background: #d17b7b;
 }
 #achievements h2 {
 	color: #fff;
@@ -470,7 +470,7 @@ ol.type li a:hover {
 .timeline>li .timeline-image h4 {
 	margin-top: 20px;
 	font-size: 14px;
-	text-transform: uppercase;
+	text-transform: uppercase
 }
 .timeline>li.timeline-inverted>.timeline-panel {
 	float: right;
@@ -502,7 +502,7 @@ ol.type li a:hover {
 }
 .timeline .timeline-heading h4.subheading {
 	text-transform: none;
-	color: #629ca7;
+	color: #a76262;
 	font-size: 20px;
 }
 .timeline .timeline-body>p, .timeline .timeline-body>ul {
@@ -512,7 +512,7 @@ ol.type li a:hover {
 #contact {
 	padding: 100px 0 40px 0;
 	color: #121d1f;
-	background: #7bc3d1;
+	background: #d17b7b;
 }
 #contact h2 {
 	color: #fff;
