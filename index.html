@@ -62,6 +62,7 @@
           <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
           <li class="hidden"> <a href="#page-top"></a> </li>
           <li> <a class="page-scroll" href="#about">About</a> </li>
+          <li> <a class="page-scroll" href="#projects">Projects</a> </li>
           <li> <a class="page-scroll" href="#skills">Skills</a> </li>
           <li> <a class="page-scroll" href="#pictures">Pictures</a> </li>
           <li> <a class="page-scroll" href="#resume">Timeline</a> </li>
@@ -85,7 +86,7 @@
           <p>I am Lawrence Lai, born in Australia, raised in Hong Kong, and spent my college and graduate school years in a variety of locations in the United States. I work in the <a href= "http://green-group.mit.edu/"> Green Group </a> as a PhD candidate in the Department of Chemical Engineering of MIT, Boston MA. </p>
           <p>My role in the Green Group is the chief lab manager, in charge of maintenance of hardware and equipment. My research also employs quantum calculations, database management, and reaction mechanism generation of alkylaromatics to study the behavior of crude oil upgrading and pyrolysis using the group software <a href="http://rmg.mit.edu/"> Reaction Mechanism Generator (RMG) </a>. </p>
           <p>As a part of MIT's culture, I was the President of organization <a href="http://hkss.mit.edu/"> Hong Kong Student Society of MIT </a> (Fall 2015 - Spring 2018), in charge of event planning, execution, budget planning, and website development. 
-          <p>In my spare time, I am a martial artist in the art of Taekwondo (rank of 1st Geup Black Stripe) under <a href="http://web.mit.edu/taekwondo/"> MIT Sport Taekwondo </a>, competing in the <a href="https://www.ectc-online.org/"> East Coast Taekwondo Collegiate (ECTC) League </a> and the <a href="http://ncta-usa.com/">National Collegiate Taekwondo Association (NCTA) </a>. I am also highly involved in video gaming, appreciating both competitive and non-competitive scenes. </p>
+          <p>In my spare time, I am a martial artist in the art of Taekwondo (rank of 1st Dan Black Belt) under <a href="http://web.mit.edu/taekwondo/"> MIT Sport Taekwondo </a> (I am also its club president as of 2018), competing in the <a href="https://www.ectc-online.org/"> East Coast Taekwondo Collegiate (ECTC) League </a> and the <a href="http://ncta-usa.com/">National Collegiate Taekwondo Association (NCTA) </a>. I am also highly involved in video gaming, appreciating both competitive and non-competitive scenes. </p>
           <p class="text-center"><a class="btn btn-primary" href="../resume/Lai_Resume_2018.pdf"><i class="fa fa-download"></i> Download Resume</a></p>
         </div>
       </div>
@@ -103,39 +104,46 @@
       <div class="col-md-8 col-md-offset-2">
         <div class="projects-text">
 		<h3> 1. Research Overview </h3>
+          <img src="img/Projects/heavycrude.jpg" alt="" style="width:200px;height:auto;" align="right"> 
           <p> With the continued increase in energy demand, the OPEC World Oil Outlook expects Crude Oil Consumption to increase by millions of barrels per day twenty years from now. To accomodate the ever increasing demand on oil, the world will eventually tap into heavier oil sources.</p>
 		  <p> To better utilize heavier oil sources, heavy crude must be upgraded to form lighter hydrocarbons and to remove heterocompounds in order to 1. enable cleaner combustion, 2. meet environmental standards, and 3. achieve appropriate flow properties. </p>
 		  <p> My work focuses on pyrolysis of alkylbenzenes in conditions similar to crude oil upgrading to model the behavior of alkylaromatic compounds in crude oil during crude oil upgrading process conditions. </p>
 		<h4> Reaction Mechanism Generation </h4>
-		  <p> In this work, hexylbenzene is used as a model compound to study the reactions of alkylaromatics due to its appropriate size and structure. In the pyrolysis of hexylbenzene, up to 500 products can be generated in the short span of 40 minutes. With so much information off a single data point, and additional missing information due to reactive intermediates, unstable radicals, and multiple pathways leading to identical compounds, conventional means of experimental studies are not sufficient to understand the pyrolysis of alkylaromatics. </p>
+          <img src="img/Projects/RMG.png" alt="" style="width:600px;height:auto;" class="center" align="middle"> 
+          <p> In this work, hexylbenzene is used as a model compound to study the reactions of alkylaromatics due to its appropriate size and structure. In the pyrolysis of hexylbenzene, up to 500 products can be generated in the short span of 40 minutes. With so much information off a single data point, and additional missing information due to reactive intermediates, unstable radicals, and multiple pathways leading to identical compounds, conventional means of experimental studies are not sufficient to understand the pyrolysis of alkylaromatics. </p>
 		  <p> Instead, the <a href="http://rmg.mit.edu/"> Green Group Reaction Mechanism Generator (RMG) </a> is used to predict the reactions of hexylbenzene. The reaction mechanism generator uses a flux base algorithm that searches for highest flux reactions, and adds these reactions to the core of the model generation. Added reactions expand the number of core species and enable further reactions to take place, thus recursively expanding the reactive environment of the model until no reactions meet a tolerance criteria, thus terminating the model generation.</p>
 		<h4> Database Maintenance </h4>		
-		  <p> While the concept of RMG is novel, there are many practical aspects that limit the capabilities of RMG. One such is the limited database of RMG; for many species in the hexylbenzene mechanism, thermochemistry estimates are of insufficient accuracy that would adversely affect yield predictions. Likewise, many reaction families contain inaccurate or incomplete data and cause erroneous reaction pathways to take place over ones that more closely resemble the truth.</p>
+          <img src="img/Projects/database.png" alt="" style="width:300px;height:auto;" align="right"> 
+          <p> While the concept of RMG is novel, there are many practical aspects that limit the capabilities of RMG. One such is the limited database of RMG; for many species in the hexylbenzene mechanism, thermochemistry estimates are of insufficient accuracy that would adversely affect yield predictions. Likewise, many reaction families contain inaccurate or incomplete data and cause erroneous reaction pathways to take place over ones that more closely resemble the truth.</p>
 		  <p> Part of my research involves doing calculations under the CBS-QB3 level of theory to maintain and expand the database of RMG to ensure thermochemistry and kinetics estimations that are as accurate as possible. Database maintenance also occassionally involves restructuring of old and inefficient structures to more efficiently make use of newly accquired data. </p>
 		<h4> Experimental Confirmation </h4>
 		  <p> To ensure phsycial significance of generated reaction mechanisms, generated alkylaromatic models are compared towards experiments. In my research, I perform batch reactor experiments under high temperature and pressure to study the behavior of alkylaromatic pyrolysis, and analyze the product compositions and attempt to draw similarities or differences with my models. </p>
 		<h4> Hardware Maintenance </h4>
+          <img src="img/Projects/gcms.png" alt="" style="width:250px;height:auto;" align="left"> 
 		  <p> To ensure accurate experimental conditions and analysis, much of my labwork boils down to maintaining hardware in the lab. </p>
 		  <p> In the Green Lab, there are multiple units of gas chromatography instrumentation that require maintenance. These could range from the replacement of inlet liners, all the way to helping the installation of a modulator in order to perform two dimensional GCxGC. </p>
-		  <p> I also help build and maintain lab equipment. Most commonly, I handle SITEC and Swagelok fittings while building new batch reactors and assemble glassware for distillation, but I have had past experience working with flow reactors containing crude oil (it was tedious), and other simple apparatus. </p>
+		  <br> <p> I also help build and maintain lab equipment. Most commonly, I handle SITEC and Swagelok fittings while building new batch reactors and assemble glassware for distillation, but I have had past experience working with flow reactors containing crude oil (it was tedious), and other simple apparatus. </p>
 		<h4> Software Development </h4>
 		  <p> Not particularly my strong suite, but at times, RMG code requires maintenance that is beyond the scope of database maintenance. Occassionally, I would also fix parts of RMG code. My past achievements include changing fitting functions, screening for inadequate hindered rotors, and other simple tests to ensure proper functionality of RMG. </p>
 		<h3> 2. Taekwondo </h3>
-		  <p> In my personal life, I devote a significant portion of my time in Taekwondo. I have had days where I practiced 10-12 hours a week, but due to my current commitment to work, as well as other physical limitations, I try to limit myself to 4-5 hours. </p>
-		<h4> The Flow Experience </h4>
-		  <p> </p>
+          <img src="img/Projects/Taekwondo.jpg" alt="" style="width:300px;height:auto;" align="right"> 
+          <p> In my personal life, I devote a significant portion of my time in Taekwondo. I have had days where I practiced 10-12 hours a week, but due to my current commitment to work, as well as other physical limitations, I try to limit myself to 4-5 hours. </p>
+        <h4> The Flow Experience </h4>
+		  <p> In the past, I have derived the flow experience from playing the video game Taiko no Tatsujin. This game encompasses both coordination and physicality. However, as a result of my migration to the United States, the availability of this game has been limited, and I have been in a new pursuit for the flow experience. I have chosen Taekwondo, as it encompasses the same skills (coordination and physicality), and pushes me to much greater limits in both aspects. </p>
 		<h4> Leadership in Taekwondo </h4>
-		  <p> </p>
+		  <p> I joined MIT Sport Taekwondo in February of 2016. As of Summer of 2018, I have achieved the rank of 1st Dan Black Belt, and also took leadership of MIT Sport Taekwondo as its president. The combination of these two roles led me to the involvement of teaching techniques to the lower ranks, as well as ensuring the team runs smoothly on a more administrative point of view. One of the main roles of the President is to run the MIT Taekwondo Tournament in October, but other roles include management of different officer positions, relaying feedback between students and instructors, and ensuring other aspects of the team are properly run. </p>
 		<h4> Tournament Involvement </h4>
-		  <p> </p>
+		  <p> Throughout the course of my Taekwondo experience, I have competed in the East Coast Taekwondo Collegiate and National Collegiate Taekwondo Association in both Poomsae (choreographed forms) and sparring. I find it extremely important to show my competitive spirit and progress through events such as these to be a fully well rounded Taekwondo martial artist. </p>
 		<h3> 3. Hong Kong Student Society </h3>
-		  <p> </p>
+          <img src="img/Projects/HKSSLogo.jpg" alt="" style="width:200px;height:auto;" align="right"> 
+          <p> As an individual who spent his first fifteen years of his life growing up in Hong Kong, I fully embrace the culture of Hong Kong and love to proudly share this joy to others. Carrying these emotions, I have taken the role of the President of MIT's Hong Kong Student Society in 2015-2018 in order to foster relationships between Hong Kong Students, as well as spread the culture of Hong Kong to foreigners. </p>
 		<h4> Fostering Student Relationships </h4>
-		  <p> </p>
+		  <p> The primary purpose of the Hong Kong Student Society is to ensure meaningful relationships between Hong Kong students form within MIT. In a place ten thousand miles far from home, our proud language of Cantonese, our mixed eastern and western traditions, and our unique obsession to karaoke could be lost to the intense study environment and the ever so diverse environment of MIT. Part of the Hong Kong Student Society's purpose is provide a second home to students of Hong Kong, and to remind students who have traveled far to pursue education where we came from. </p>
 		<h4> Spreading Hong Kong Culture </h4>
-		  <p> </p>
+          <img src="img/Projects/HKFlag.png" alt="" style="width:170px;height:auto;" align="left"> 
+		  <p> As an organization from Hong Kong, the Hong Kong Student Society brings its Dim Sum, Cantonese culture, and pop references and incorporates them into the diversity of MIT, making our surroundings greater than the sum of Hong Kong's culture and MIT's. Our organization tightly embraces the notion of welcoming students of other ethnicities to experience our culture. </p>
 		<h4> Manufacturing Opportunities </h4>
-		  <p> </p>
+		  <p> The Hong Kong Student Society also welcomes many guests as part of our organization's operation. Some of them include the Hong Kong Government, various political parties, Hong Kong journalists and Professors. We invite all guests to share their views to enlighten the general body of MIT students, as a learning experience through diversity.</p>
         </div>
       </div>
     </div>
