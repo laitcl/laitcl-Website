@@ -42,7 +42,7 @@
       <div class="row">
         <div class="intro-text">
           <h1>I am Dr. <span class="name">Lawrence Lai</span></h1>
-          <p>I am an Insight Data Engineering Fellow</p>
+          <p>Data Engineer</p>
           <a href="#about" class="btn btn-default btn-lg page-scroll">Learn More</a> </div>
       </div>
     </div>
@@ -63,7 +63,6 @@
           <li class="hidden"> <a href="#page-top"></a> </li>
           <li> <a class="page-scroll" href="#about">About</a> </li>
           <li> <a class="page-scroll" href="#projects">Projects</a> </li>
-          <li> <a class="page-scroll" href="#skills">Skills</a> </li>
           <li> <a class="page-scroll" href="#pictures">Pictures</a> </li>
           <li> <a class="page-scroll" href="#resume">Timeline</a> </li>
           <li> <a class="page-scroll" href="#contact">Contact</a> </li>
@@ -83,11 +82,10 @@
       <div class="col-md-12 text-center"><img src="img/about.jpg" class="img-responsive"></div>
       <div class="col-md-8 col-md-offset-2">
         <div class="about-text">
-          <p>I am Lawrence Lai, born in Australia, raised in Hong Kong, and spent my college and graduate school years in a variety of locations in the United States. I am an <a href= "https://www.insightdataengineering.com/"> Insight Data Engineering Fellow </a>, and formerly a member of the <a href= "http://green-group.mit.edu/"> Green Group </a>, residing in Boston MA. </p>
-          <p>My goal in Insight's data engineering is to reorient my skills to be more industrially relevant. my current project is a tool that could analyze twitch.tv chatroom messages at a high throughput using the appropriate data engineering tools such as Kafka and PostgresQL, found in <a href="https://github.com/laitcl/ChatroomAnalytics"> my Github repository </a>. </p>
-          <p>As a part of MIT's culture, I was the President of organization <a href="http://hkss.mit.edu/"> Hong Kong Student Society of MIT </a> (Fall 2015 - Spring 2018), and I participated in Taekwondo (rank of 1st Dan Black Belt) under <a href="http://web.mit.edu/taekwondo/"> MIT Sport Taekwondo </a>. </p> 
-		  <p> I am also highly involved in video gaming (S7 Diamond in League of Legends, one time Legend in Hearthstone GvG), appreciating both competitive and non-competitive scenes. </p>
-          <p class="text-center"><a class="btn btn-primary" href="resume/Lai_Resumev21.pdf" target="_blank"><i class="fa fa-download"></i> Download Resume</a></p>
+          <p>I am Lawrence Lai, born in Australia, raised in Hong Kong, spent my college and graduate school years in a variety of locations in the United States, and am now developing a career in Boston, Massachusetts. I am a data engineer at <a href= "https://www.patientslikeme.com/"> PatientsLikeMe </a>, formerly a member of <a href= "https://www.insightdataengineering.com/"> Insight Data Science's Data Engineering Program </a>, and <a href= "http://green-group.mit.edu/"> Green Group MIT </a>. </p>
+          <p>My data engineering expertise includes distributed technologies such as Kafka, database proficiency in PostgreSQL, experience in multiple programming languages (Python and Ruby), and maintaining website data structures in Rails and Django. </p>
+          <p>I am dedicated skill and achievement hunter in my spare time; reaching numerous goals such as black belt in taekwondo, deeply exploring skills in piano and ballet in my childhood, and grinding for video game titles such as S7 diamond league in League of Legends, and one time legend in Hearthstone GvG. </p>
+          <p class="text-center"><a class="btn btn-primary" href="resume/Lai_Resumev27.pdf" target="_blank"><i class="fa fa-download"></i> Download Resume</a></p>
         </div>
       </div>
     </div>
@@ -103,81 +101,63 @@
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
         <div class="projects-text">
-		<h3> 1. Data Engineering Fellow </h3>
-		  <img src="img/Projects/InsightLogo.png" alt="" style="width:200px;height:auto;" align="left"> 
-		  <p> To reorient my academic skills in a more industrially relevant setting, I joined the Insight data engineering fellows program as of June 2016. I've observed the potency of Data Science and Data Engineering in the modern world, and I would like to leverage my engineering skills from MIT to participate in an industry with high demand for employees. </p>
-		  <p> Integrating Insight's data engineering training with my personal passion towards video game media, my project analyzes chatrooms of <a href="https://www.twitch.tv/"> Twitch TV </a>, a popular video game broadcasting platform. Twitch TV's chatrooms have traffic up to 150-200 messages per second; analyzing the messages of each chatroom, identifying their traffic, and analyzing the sentiment of the viewers within the set of [neutral, laughing, disappointed, question] provides valuable quantitative information surrounding a channel's performance based on audience interaction </p>
-		  <p> The end goal of this project is to be able to analyze the chat messages of over 100 chatrooms in real time. The data engineering aspect of this goal lies in the sheer volume of chat messages that are being outputted in Twitch TV's platform; the analysis, clean up, and classification of the vast volume of messages is a job for many computational units in parallel, a common design consideration for data engineers. In the end of this project, I am looking to use Apache Kafka for my data ingestion and analysis, and PostgreSQL for database structure and management. </p>
-		  <p> Please visit my <a href="https://github.com/laitcl/ChatroomAnalytics"> Github repository </a> for more information on my project. </p>
-		<h3> 2. Research Overview </h3>
-          <img src="img/Projects/heavycrude.jpg" alt="" style="width:200px;height:auto;" align="right"> 
-          <p> With the continued increase in energy demand, the OPEC World Oil Outlook expects Crude Oil Consumption to increase by millions of barrels per day twenty years from now. To accomodate the ever increasing demand on oil, the world will eventually tap into heavier oil sources.</p>
-		  <p> To better utilize heavier oil sources, heavy crude must be upgraded to form lighter hydrocarbons and to remove heterocompounds in order to 1. enable cleaner combustion, 2. meet environmental standards, and 3. achieve appropriate flow properties. </p>
-		  <p> My work focuses on pyrolysis of alkylbenzenes in conditions similar to crude oil upgrading to model the behavior of alkylaromatic compounds in crude oil during crude oil upgrading process conditions. </p>
-		<h4> Reaction Mechanism Generation </h4>
-          <img src="img/Projects/RMG.png" style="width:auto;max-width:100%;" alt="" class="center" align="middle"> 
-          <p> In this work, hexylbenzene is used as a model compound to study the reactions of alkylaromatics due to its appropriate size and structure. In the pyrolysis of hexylbenzene, up to 500 products can be generated in the short span of 40 minutes. With so much information off a single data point, and additional missing information due to reactive intermediates, unstable radicals, and multiple pathways leading to identical compounds, conventional means of experimental studies are not sufficient to understand the pyrolysis of alkylaromatics. </p>
-		  <p> Instead, the <a href="http://rmg.mit.edu/"> Green Group Reaction Mechanism Generator (RMG) </a> is used to predict the reactions of hexylbenzene. The reaction mechanism generator uses a flux base algorithm that searches for highest flux reactions, and adds these reactions to the core of the model generation. Added reactions expand the number of core species and enable further reactions to take place, thus recursively expanding the reactive environment of the model until no reactions meet a tolerance criteria, thus terminating the model generation.</p>
-		<h4> Database Maintenance </h4>		
-          <img src="img/Projects/database.png" alt="" style="width:300px;height:auto;" align="right"> 
-          <p> While the concept of RMG is novel, there are many practical aspects that limit the capabilities of RMG. One such is the limited database of RMG; for many species in the hexylbenzene mechanism, thermochemistry estimates are of insufficient accuracy that would adversely affect yield predictions. Likewise, many reaction families contain inaccurate or incomplete data and cause erroneous reaction pathways to take place over ones that more closely resemble the truth.</p>
-		  <p> Part of my research involves doing calculations under the CBS-QB3 level of theory to maintain and expand the database of RMG to ensure thermochemistry and kinetics estimations that are as accurate as possible. Database maintenance also occassionally involves restructuring of old and inefficient structures to more efficiently make use of newly accquired data. </p>
-		<h4> Experimental Confirmation </h4>
-		  <p> To ensure phsycial significance of generated reaction mechanisms, generated alkylaromatic models are compared towards experiments. In my research, I perform batch reactor experiments under high temperature and pressure to study the behavior of alkylaromatic pyrolysis, and analyze the product compositions and attempt to draw similarities or differences with my models. </p>
-		<h4> Hardware Maintenance </h4>
-          <img src="img/Projects/gcms.png" alt="" style="width:250px;height:auto;" align="left"> 
-		  <p> To ensure accurate experimental conditions and analysis, much of my labwork boils down to maintaining hardware in the lab. </p>
-		  <p> In the Green Lab, there are multiple units of gas chromatography instrumentation that require maintenance. These could range from the replacement of inlet liners, all the way to helping the installation of a modulator in order to perform two dimensional GCxGC. </p>
-		  <br> <p> I also help build and maintain lab equipment. Most commonly, I handle SITEC and Swagelok fittings while building new batch reactors and assemble glassware for distillation, but I have had past experience working with flow reactors containing crude oil (it was tedious), and other simple apparatus. </p>
-		<h4> Software Development </h4>
-		  <p> Not particularly my strong suite, but at times, RMG code requires maintenance that is beyond the scope of database maintenance. Occassionally, I would also fix parts of RMG code. My past achievements include changing fitting functions, screening for inadequate hindered rotors, and other simple tests to ensure proper functionality of RMG. </p>
-		<h3> 3. Taekwondo </h3>
-          <img src="img/Projects/Taekwondo.jpg" alt="" style="width:300px;height:auto;" align="right"> 
-          <p> In the past, I devote a significant portion of my time in Taekwondo. I have had days where I practiced 10-12 hours a week, but due to my current commitment to work, as well as other physical limitations, I have moved on to pursue other athletic goals that compliment with taekwondo. </p>
-        <h4> The Flow Experience </h4>
-		  <p> In the past, I have derived the flow experience from playing the video game Taiko no Tatsujin. This game encompasses both coordination and physicality. However, as a result of my migration to the United States, the availability of this game has been limited, and I have been in a new pursuit for the flow experience. I have chosen Taekwondo, as it encompasses the same skills (coordination and physicality), and pushes me to much greater limits in both aspects. </p>
-		<h4> Leadership in Taekwondo </h4>
-		  <p> I joined MIT Sport Taekwondo in February of 2016. As of Summer of 2018, I have achieved the rank of 1st Dan Black Belt, and also took leadership of MIT Sport Taekwondo as its president. Throughout my course of predience, I have secured the largest incoming class to our team, as well as organized a tournament and changed parts of the infrastructure of the team. My role was short lived, as I quickly found myself in a position where I must refocus on my academic work at MIT. </p>
-		<h3> 4. Hong Kong Student Society </h3>
-          <img src="img/Projects/HKSSLogo.jpg" alt="" style="width:200px;height:auto;" align="right"> 
-          <p> As an individual who spent his first fifteen years of his life growing up in Hong Kong, I fully embrace the culture of Hong Kong and love to proudly share this joy to others. Carrying these emotions, I have taken the role of the President of MIT's Hong Kong Student Society in 2015-2018 in order to foster relationships between Hong Kong Students, as well as spread the culture of Hong Kong to foreigners. </p>
-		<h4> Fostering Student Relationships </h4>
-		  <p> The primary purpose of the Hong Kong Student Society is to ensure meaningful relationships between Hong Kong students form within MIT. In a place ten thousand miles far from home, our proud language of Cantonese, our mixed eastern and western traditions, and our unique obsession to karaoke could be lost to the intense study environment and the ever so diverse environment of MIT. Part of the Hong Kong Student Society's purpose is provide a second home to students of Hong Kong, and to remind students who have traveled far to pursue education where we came from. </p>
-		<h4> Spreading Hong Kong Culture </h4>
-          <img src="img/Projects/HKFlag.png" alt="" style="width:170px;height:auto;" align="left"> 
-		  <p> As an organization from Hong Kong, the Hong Kong Student Society brings its Dim Sum, Cantonese culture, and pop references and incorporates them into the diversity of MIT, making our surroundings greater than the sum of Hong Kong's culture and MIT's. Our organization tightly embraces the notion of welcoming students of other ethnicities to experience our culture. </p>
-		<h4> Manufacturing Opportunities </h4>
-		  <p> The Hong Kong Student Society also welcomes many guests as part of our organization's operation. Some of them include the Hong Kong Government, various political parties, Hong Kong journalists and Professors. We invite all guests to share their views to enlighten the general body of MIT students, as a learning experience through diversity.</p>
+          <h3> 1. PatientsLikeMe </h3>
+            <img src="img/Projects/plm-logo.png" alt="" style="width:200px;height:auto;" align="left">
+            <p> Coming out of Insight's Data Engineering cohort as of September 2019, I joined PatientsLikeMe to better the lives of individuals through handling patient generated health data voluntarily collected by users of the PatientsLikeMe website, and to further test my skills in this new area of life. </p>
+            <p> My responsibilities in this company involve setting up any data related infrastructure for the operation of other teams, including upcoming features, old processes, as well as privately distributed web tools. </p>
+            <p> While I am not qualified to speak for PatientsLikeMe as a whole, I have personal faith in the potential of PatientsLikeMe to help discover treatment methodologies to patients, as well as bolstering the information clarity of our site's users (patients or caretakers) to encourage better decision making. </p>
+            <p> In the interest of not getting fired, I this is as much as I will say on my personal website. Feel free to visit <a href= "https://www.patientslikeme.com/"> PatientsLikeMe </a> for a more official and clear perspective.
+          <h3> 2. Boston Night Life </h3>
+            <img src="img/Projects/night-life.jpg" alt="" style="width:200px;height:auto;" align="right">
+            <p> Since leaving MIT, I was forced to come to terms with the difficulty life presents with regards to developing a rich social life. Whereas a school environment provides ample opportunities to interact with strangers and build a wider network of similar background and interest, Boston's night life scene replenishes these missed chances, and allows my network to be cast even wider to individuals of any background. </p>
+            <p> Home to Whiskey Saigon (recently closed), and later Royale, I occassionally take the role of a promoter, but always an active visitor to Royale. A well developed social calibration is certainly part of my grand life goal of acquiring more skills. </p>
+      		<h3> 3. Insight Data Engineering Fellow </h3>
+      		  <img src="img/Projects/InsightLogo.png" alt="" style="width:200px;height:auto;" align="left"> 
+      		  <p> To reorient my academic skills in a more industrially relevant setting, I joined the Insight data engineering fellows program as of June 2016. I've observed the potency of Data Science and Data Engineering in the modern world, and I would like to leverage my engineering skills from MIT to participate in an industry with high demand for employees. </p>
+            <p> Integrating Insight's data engineering training with my personal passion towards video game media, my project analyzes chatrooms of <a href="https://www.twitch.tv/"> Twitch TV </a>, a popular video game broadcasting platform. Twitch TV's chatrooms have traffic up to 150-200 messages per second; analyzing the messages of each chatroom, identifying their traffic, and analyzing the sentiment of the viewers within the set of [neutral, laughing, disappointed, question] provides valuable quantitative information surrounding a channel's performance based on audience interaction </p>
+            <img src="img/Projects/twitch-logo.png" alt="" style="width:200px;height:auto;" align="right"> 
+      		  <p> The end goal of this project is to be able to analyze the chat messages of over 100 chatrooms in real time. The data engineering aspect of this goal lies in the sheer volume of chat messages that are being outputted in Twitch TV's platform; the analysis, clean up, and classification of the vast volume of messages is a job for many computational units in parallel, a common design consideration for data engineers. In the end of this project, I am looking to use Apache Kafka for my data ingestion and analysis, and PostgreSQL for database structure and management. </p>
+      		  <p> Please visit my <a href="https://github.com/laitcl/ChatroomAnalytics"> Github repository </a> for more information on my project. </p>
+      		<h3> 4. MIT Research Overview </h3>
+            <img src="img/Projects/heavycrude.jpg" alt="" style="width:200px;height:auto;" align="right"> 
+            <p> With the continued increase in energy demand, the OPEC World Oil Outlook expects Crude Oil Consumption to increase by millions of barrels per day twenty years from now. To accomodate the ever increasing demand on oil, the world will eventually tap into heavier oil sources.</p>
+      		  <p> To better utilize heavier oil sources, heavy crude must be upgraded to form lighter hydrocarbons and to remove heterocompounds in order to 1. enable cleaner combustion, 2. meet environmental standards, and 3. achieve appropriate flow properties. </p>
+      		  <p> My work focuses on pyrolysis of alkylbenzenes in conditions similar to crude oil upgrading to model the behavior of alkylaromatic compounds in crude oil during crude oil upgrading process conditions. </p>
+      		<h4> Reaction Mechanism Generation </h4>
+            <img src="img/Projects/RMG.png" style="width:auto;max-width:100%;" alt="" class="center" align="middle"> 
+            <p> In this work, hexylbenzene is used as a model compound to study the reactions of alkylaromatics due to its appropriate size and structure. In the pyrolysis of hexylbenzene, up to 500 products can be generated in the short span of 40 minutes. With so much information off a single data point, and additional missing information due to reactive intermediates, unstable radicals, and multiple pathways leading to identical compounds, conventional means of experimental studies are not sufficient to understand the pyrolysis of alkylaromatics. </p>
+      		  <p> Instead, the <a href="http://rmg.mit.edu/"> Green Group Reaction Mechanism Generator (RMG) </a> is used to predict the reactions of hexylbenzene. The reaction mechanism generator uses a flux base algorithm that searches for highest flux reactions, and adds these reactions to the core of the model generation. Added reactions expand the number of core species and enable further reactions to take place, thus recursively expanding the reactive environment of the model until no reactions meet a tolerance criteria, thus terminating the model generation.</p>
+      		<h4> Database Maintenance </h4>		
+            <img src="img/Projects/database.png" alt="" style="width:300px;height:auto;" align="right"> 
+            <p> While the concept of RMG is novel, there are many practical aspects that limit the capabilities of RMG. One such is the limited database of RMG; for many species in the hexylbenzene mechanism, thermochemistry estimates are of insufficient accuracy that would adversely affect yield predictions. Likewise, many reaction families contain inaccurate or incomplete data and cause erroneous reaction pathways to take place over ones that more closely resemble the truth.</p>
+      		  <p> Part of my research involves doing calculations under the CBS-QB3 level of theory to maintain and expand the database of RMG to ensure thermochemistry and kinetics estimations that are as accurate as possible. Database maintenance also occassionally involves restructuring of old and inefficient structures to more efficiently make use of newly accquired data. </p>
+      		<h4> Experimental Confirmation </h4>
+      		  <p> To ensure phsycial significance of generated reaction mechanisms, generated alkylaromatic models are compared towards experiments. In my research, I perform batch reactor experiments under high temperature and pressure to study the behavior of alkylaromatic pyrolysis, and analyze the product compositions and attempt to draw similarities or differences with my models. </p>
+      		<h4> Hardware Maintenance </h4>
+                <img src="img/Projects/gcms.png" alt="" style="width:250px;height:auto;" align="left"> 
+      		  <p> To ensure accurate experimental conditions and analysis, much of my labwork boils down to maintaining hardware in the lab. </p>
+      		  <p> In the Green Lab, there are multiple units of gas chromatography instrumentation that require maintenance. These could range from the replacement of inlet liners, all the way to helping the installation of a modulator in order to perform two dimensional GCxGC. </p>
+      		  <br> <p> I also help build and maintain lab equipment. Most commonly, I handle SITEC and Swagelok fittings while building new batch reactors and assemble glassware for distillation, but I have had past experience working with flow reactors containing crude oil (it was tedious), and other simple apparatus. </p>
+      		<h4> Software Development </h4>
+      		  <p> Not particularly my strong suite, but at times, RMG code requires maintenance that is beyond the scope of database maintenance. Occassionally, I would also fix parts of RMG code. My past achievements include changing fitting functions, screening for inadequate hindered rotors, and other simple tests to ensure proper functionality of RMG. </p>
+      		<h3> 5. Taekwondo </h3>
+                <img src="img/Projects/Taekwondo.jpg" alt="" style="width:300px;height:auto;" align="right"> 
+                <p> In the past, I devote a significant portion of my time in Taekwondo. I have had days where I practiced 10-12 hours a week, but due to my current commitment to work, as well as other physical limitations, I have moved on to pursue other athletic goals that compliment with taekwondo. </p>
+              <h4> The Flow Experience </h4>
+      		  <p> In the past, I have derived the flow experience from playing the video game Taiko no Tatsujin. This game encompasses both coordination and physicality. However, as a result of my migration to the United States, the availability of this game has been limited, and I have been in a new pursuit for the flow experience. I have chosen Taekwondo, as it encompasses the same skills (coordination and physicality), and pushes me to much greater limits in both aspects. </p>
+      		<h4> Leadership in Taekwondo </h4>
+      		  <p> I joined MIT Sport Taekwondo in February of 2016. As of Summer of 2018, I have achieved the rank of 1st Dan Black Belt, and also took leadership of MIT Sport Taekwondo as its president. Throughout my course of predience, I have secured the largest incoming class to our team, as well as organized a tournament and changed parts of the infrastructure of the team. My role was short lived, as I quickly found myself in a position where I must refocus on my academic work at MIT. </p>
+      		<h3> 6. Hong Kong Student Society </h3>
+                <img src="img/Projects/HKSSLogo.jpg" alt="" style="width:200px;height:auto;" align="right"> 
+                <p> As an individual who spent his first fifteen years of his life growing up in Hong Kong, I fully embrace the culture of Hong Kong and love to proudly share this joy to others. Carrying these emotions, I have taken the role of the President of MIT's Hong Kong Student Society in 2015-2018 in order to foster relationships between Hong Kong Students, as well as spread the culture of Hong Kong to foreigners. </p>
+      		<h4> Fostering Student Relationships </h4>
+      		  <p> The primary purpose of the Hong Kong Student Society is to ensure meaningful relationships between Hong Kong students form within MIT. In a place ten thousand miles far from home, our proud language of Cantonese, our mixed eastern and western traditions, and our unique obsession to karaoke could be lost to the intense study environment and the ever so diverse environment of MIT. Part of the Hong Kong Student Society's purpose is provide a second home to students of Hong Kong, and to remind students who have traveled far to pursue education where we came from. </p>
+      		<h4> Spreading Hong Kong Culture </h4>
+                <img src="img/Projects/HKFlag.png" alt="" style="width:170px;height:auto;" align="left"> 
+      		  <p> As an organization from Hong Kong, the Hong Kong Student Society brings its Dim Sum, Cantonese culture, and pop references and incorporates them into the diversity of MIT, making our surroundings greater than the sum of Hong Kong's culture and MIT's. Our organization tightly embraces the notion of welcoming students of other ethnicities to experience our culture. </p>
+      		<h4> Manufacturing Opportunities </h4>
+      		  <p> The Hong Kong Student Society also welcomes many guests as part of our organization's operation. Some of them include the Hong Kong Government, various political parties, Hong Kong journalists and Professors. We invite all guests to share their views to enlighten the general body of MIT students, as a learning experience through diversity.</p>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Skills Section -->
-<div id="skills" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Skills</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="100"> <span class="percent">90</span> </span>
-        <h4>Git</h4>
-      </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="90"> <span class="percent">90</span> </span>
-        <h4>Python</h4>
-      </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
-        <h4>Apache Kafka</h4>
-      </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
-        <h4>PostgreSQL</h4>
-      </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="75"> <span class="percent">75</span> </span>
-        <h4>Machine Learning</h4>
-      </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="60"> <span class="percent">65</span> </span>
-        <h4>Spark</h4>
       </div>
     </div>
   </div>
