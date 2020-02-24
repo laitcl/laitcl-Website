@@ -2,6 +2,6 @@
 
 Website location at:
 
-laitcl.com(https://laitcl.github.io/laitcl-Website/)
+[laitcl.com](https://laitcl.github.io/laitcl-Website/)
 
 Everything's a static webpage. Just plug and play
