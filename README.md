@@ -2,6 +2,6 @@
 
 Website location at:
 
-http://www-personal.umich.edu/~laitcl/index.html
+laitcl.com(https://laitcl.github.io/laitcl-Website/)
 
 Everything's a static webpage. Just plug and play
