@@ -142,9 +142,9 @@ hr {
 	color: #fff;
 }
 .btn-default {
-	color: #fff;
+	color: #090909;
 	background-color: transparent;
-	border-color: #fff;
+	border-color: #090909;
 	padding: 10px 20px;
 	margin: 0;
 	font-size: 16px;
@@ -676,7 +676,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .intro .intro-text {
 	max-width: 75%;
-   color: black;
+   color: #090909;
 }
 .intro .intro-text p {
 	font-family: 'Lato', sans-serif;
