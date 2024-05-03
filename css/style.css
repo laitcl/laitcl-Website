@@ -177,25 +177,26 @@ hr {
 	display: table;
 	width: 100%;
 	height: auto;
-	padding: 100px 0;
+	padding: 50px 0;
 	text-align: center;
 	color: #090909;
 	background: url(../img/intro-bg_Lai.jpg) no-repeat center;
+   background-size: contain;
 	background-color: rgba(192,192,192,0.5);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	background-size: cover;
 	-o-background-size: cover;
 }
 .intro H1 {
    background-color: rgba(192,192,192,0.5);
    display: inline-block;
+   font-size: 28px;
 }.
 .intro .name {
 	font-weight: 600;
 }
 .intro .intro-text p {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	margin-top: 20px;
    font-size: 20px;
    background-color: rgba(192,192,192,0.5);
@@ -677,10 +678,19 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 /* Media Queries */
 @media(min-width:768px) {
 .intro {
+	display: table;
+	width: 100%;
 	height: 100%;
 	padding: 0;
 	text-align: left;
 	color: #090909;
+	background: url(../img/intro-bg_Lai.jpg) no-repeat center;
+   background-size: cover;
+	background-color: rgba(192,192,192,0.5);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 }
 .intro H1 {
    font-family: 'verdana', sans-serif;
